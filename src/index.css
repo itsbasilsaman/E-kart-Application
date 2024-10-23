@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Marcellus", serif;
+}
+
+/* footer */
+
+footer {
+  height: 280px;
+  background-color: rgb(14, 67, 114);
+  color: white;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+}
+
+@media(max-width:1230px){
+  footer {
+    height: auto; 
+  }
+}
+@media(max-width:991px){
+  footer {
+     grid-template-columns: repeat(2,1fr);
+  }
+}
+@media(max-width:771px){
+  footer {
+     grid-template-columns: 1fr;
+  }
+}
+@media(max-width:400px){
+  header {
+    padding: 0px 10px;
+  }
+  header .button-section {
+    display: flex;
+    gap: 15px;
+  }
+}
+
+/* header */
+
+header {
+  background-color:  rgb(14, 67, 114);
+}
